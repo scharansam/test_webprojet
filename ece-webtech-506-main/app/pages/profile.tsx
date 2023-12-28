@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import supabase from '../utils/supabaseClient';
+import supabase from '../supabaseClient';
 import md5 from 'md5';
 import Link from "next/link";
 

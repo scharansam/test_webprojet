@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import axios from 'axios';
 import React, {useEffect, useState} from "react";
-import supabase from "../../utils/supabaseClient";
+import supabase from "../../supabaseClient";
 
 interface Movie {
   id: string;

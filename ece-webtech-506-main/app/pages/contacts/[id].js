@@ -1,5 +1,5 @@
 // pages/admin/contacts/[id].js
-import supabaseClient from '../../utils/supabaseClient';
+import supabase from '../../supabaseClient'
 export async function getServerSideProps({ params }) {
     const { id } = params
     const { data, error } = await supabase

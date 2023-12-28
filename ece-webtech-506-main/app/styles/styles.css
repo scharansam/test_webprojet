@@ -1,0 +1,29 @@
+@keyframes flash {
+    0%, 100% {
+      opacity: 1000;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .animate-flash {
+    animation: flash 1s infinite;
+  }
+
+@keyframes scroll {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-scroll {
+    animation: scroll 2s infinite;
+  }
+  

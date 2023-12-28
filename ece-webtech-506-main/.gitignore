@@ -1,0 +1,12 @@
+.next
+dist/
+build/
+
+node_modules/
+.env
+.idea/
+
+*.log
+.cache/
+
+volumes/

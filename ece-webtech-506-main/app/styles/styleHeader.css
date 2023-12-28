@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+.bubble-text{background:#139ee0; color:#fff; padding:7px 15px; border-radius:3px; width:350px;}
+
+.bubble-text::after{
+    content:"";
+    border-left:20px solid transparent;
+    border-right:20px solid transparent;
+    border-top: 20px solid #139ee0;
+    position: absolute;
+}
+
+.tailleHeader{
+    height: 75vh; /* 50% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+}
+
+.flex-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+.flex-title {
+    color: #f1f1f1;
+    position: relative;
+    font-size: 6vw;
+    margin: auto;
+    text-align: center;
+    transform: rotate(90deg);
+    top: 25%;
+}
+@media screen and (max-width: 768px) {
+    .flex-title {
+        transform: rotate(0deg) !important;
+    }
+}
+
+.flex-about {
+    opacity: 0;
+    color: #f1f1f1;
+    position: relative;
+    width: 70%;
+    font-size: 2vw;
+    padding: 5%;
+    top: 20%;
+    border: 2px solid #f1f1f1;
+    border-radius: 10px;
+    line-height: 1.3;
+    margin: auto;
+    text-align: left;
+    transform: rotate(0deg);
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+@media screen and (max-width: 768px) {
+    .flex-about {
+        padding: 0%;
+        border: 0px solid #f1f1f1;
+    }
+}
+
+.flex-slide {
+    -webkit-flex: 1;
+    /* Safari 6.1+ */
+    -ms-flex: 1;
+    /* IE 10 */
+    flex: 1;
+    cursor: pointer;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+@media screen and (max-width: 768px) {
+    .flex-slide {
+        overflow: auto;
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flex-slide p {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flex-slide ul li {
+        font-size: 2em;
+    }
+}
+
+.flex-slide:hover {
+    -webkit-flex-grow: 3;
+    flex-grow: 3;
+}
+
+.home {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1509280951623-4a17506e3eb5?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+@media screen and (min-width: 768px) {
+    .home {
+        animation: aboutFlexSlide 3s 1;
+        animation-delay: 0s;
+    }
+}
+
+@keyframes aboutFlexSlide {
+    0% {
+        -webkit-flex-grow: 1;
+        flex-grow: 1;
+    }
+    50% {
+        -webkit-flex-grow: 3;
+        flex-grow: 3;
+    }
+    100% {
+        -webkit-flex-grow: 1;
+        flex-grow: 1;
+    }
+}
+@media screen and (min-width: 768px) {
+    .flex-title-home {
+        transform: rotate(90deg);
+        top: 15%;
+        animation: aboutFlexSlide 3s 1;
+        animation-delay: 0s;
+    }
+}
+
+@keyframes homeFlextitle {
+    0% {
+        transform: rotate(90deg);
+        top: 15%;
+    }
+    50% {
+        transform: rotate(0deg);
+        top: 15%;
+    }
+    100% {
+        transform: rotate(90deg);
+        top: 15%;
+    }
+}
+.flex-about-home {
+    opacity: 0;
+}
+@media screen and (min-width: 768px) {
+    .flex-about-home {
+        animation: aboutFlexSlide 3s 1;
+        animation-delay: 0s;
+    }
+}
+
+@keyframes flexAboutHome {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.about {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/photos-gratuite/paysages-forestiers_71767-127.jpg?w=1800&t=st=1703511527~exp=1703512127~hmac=3c902b994df277552a68b95f1e8dd0eaf40cca114f05e5058b0ad9e38afc9013);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+.contact {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/photos-gratuite/montagnes-vestrahorn-au-coucher-du-soleil-stokksnes-islande_335224-574.jpg?w=2000&t=st=1703511643~exp=1703512243~hmac=39d36ac7ef2a2302957846ef2d3fbbae181eb01dd4b01b5029612bd74f13f659);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.work {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/photos-gratuite/jetee-au-bord-lac-hallstatt-autriche_181624-44201.jpg?w=2000&t=st=1703511701~exp=1703512301~hmac=bb37002f2f64edcc75320c70135adce0c6cc9af6b5d7151e8eba505f8de484c4);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}

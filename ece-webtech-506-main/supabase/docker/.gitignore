@@ -1,0 +1,5 @@
+/supabase/docker/volumes/db/data
+/supabase/docker/volumes/storage
+.env
+/supabase/docker/test.http
+/supabase/docker/docker-compose.override.yml

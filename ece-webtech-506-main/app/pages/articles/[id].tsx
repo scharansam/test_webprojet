@@ -176,7 +176,7 @@ const MoviePage: React.FC<MoviePageProps> = ({ movie }) => {
 
 
 export const getStaticPaths = async () => {
-  const tmdbApiKey = process.env.TMDB_API_KEY;
+  const tmdbApiKey = process.env.NEXT_PUBLIC_TMDB_API_KEY;
   const apiUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${tmdbApiKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=28&with_watch_monetization_types=flatrate`;
 
   try {

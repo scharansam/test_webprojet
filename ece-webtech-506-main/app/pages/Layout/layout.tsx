@@ -1,8 +1,8 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import Nev from '../component/nev';
-import Head from '../component/Header';
-import Footer from '../component/Footer';
+import Nev from '../../component/nev';
+import Head from '../../component/Header';
+import Footer from '../../component/Footer';
 
 
 export default function RootLayout({ children}) {

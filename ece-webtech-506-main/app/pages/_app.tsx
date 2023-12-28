@@ -1,7 +1,6 @@
 import type { AppProps } from 'next/app';
 import RootLayout from './Layout/layout';
 import "../styles/styles.css"
-import {UserProvider} from "../UserContext";
 import "../styles/globals.css"
 import "../styles/styleHeader.css";
 import { createClient } from '@supabase/supabase-js'
@@ -23,11 +22,9 @@ export default function App({ Component, pageProps }: AppProps) {
             supabaseClient={supabaseClient}
             initialSession={pageProps.initialSession}
         >
-        <UserProvider>
             <RootLayout>
                 <Component {...pageProps} />
             </RootLayout>
-        </UserProvider>
         </SessionContextProvider>
     );
 }

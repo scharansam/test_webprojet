@@ -2,7 +2,7 @@ import {useSupabaseClient} from "@supabase/auth-helpers-react";
 import React, {useEffect, useState} from "react";
 import Link from "next/link";
 import md5 from 'md5';
-import supabase from "./utils/supabaseClient";
+import supabase from "../utils/supabaseClient";
 import {useRouter} from "next/router";
 import { useUser } from '@supabase/auth-helpers-react';
 

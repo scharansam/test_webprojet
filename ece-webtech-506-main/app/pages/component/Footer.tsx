@@ -1,5 +1,5 @@
 import React from 'react';
-import { useUser } from './UserContext';
+import { useUser } from '../../UserContext';
 
 interface FooterProps {
   companyName: string;

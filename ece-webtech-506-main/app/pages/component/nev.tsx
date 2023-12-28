@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from "next/router";
-import supabase from "../utils/supabaseClient";
-import {useUser} from "./UserContext";
+import supabase from "../../utils/supabaseClient";
+import {useUser} from "../../UserContext";
 import ArticlesUserAllsansSupp from "../articlesUserAllsansSupp";
 
 export default function Nav() {

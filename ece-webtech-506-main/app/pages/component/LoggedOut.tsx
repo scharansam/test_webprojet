@@ -1,6 +1,6 @@
 // LoggedOut.js
 import React from 'react';
-import { useUser } from './UserContext';
+import { useUser } from '../../UserContext';
 
 function LoggedOut() {
     const { login } = useUser();

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Auth } from '@supabase/auth-ui-react';
 import { useRouter } from 'next/router';
-import supabase from './utils/supabaseClient';
+import supabase from '../utils/supabaseClient';
 import { ThemeSupa } from '@supabase/auth-ui-shared';
 
 const Login = () => {

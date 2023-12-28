@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app';
 import RootLayout from './Layout/layout';
 import "../styles/styles.css"
-import {UserProvider} from "./component/UserContext";
+import {UserProvider} from "../UserContext";
 import "../styles/globals.css"
 import "../styles/styleHeader.css";
 import { createClient } from '@supabase/supabase-js'
